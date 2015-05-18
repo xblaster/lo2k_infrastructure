@@ -1,0 +1,9 @@
+web:
+  build: .
+  command: grunt serve:dist --force
+  ports:
+   - "9000:9000"
+  links:
+   - mongo
+mongo:
+  image: mongo:latest
