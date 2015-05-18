@@ -1,4 +1,4 @@
-web:
+wadmgr:
   build: .
   command: grunt serve:dist --force
   ports:
