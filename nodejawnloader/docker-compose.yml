@@ -1,0 +1,5 @@
+nodjawnloader:
+  build: .
+  command: node app.js
+  ports:
+   - "9001:9000"
