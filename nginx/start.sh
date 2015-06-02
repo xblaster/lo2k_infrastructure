@@ -4,4 +4,5 @@ docker run -d -p 80:80 --name nginx_balancer \
        -v  ~/lo2k_infrastructure/nginx/logs:/var/log/nginx \
        -v  ~/lo2k_infrastructure/nginx/html:/var/www \
        --link weblog_wordpress_1:weblog \
+       --link ninja:ninja\
        xblaster/nginx  
